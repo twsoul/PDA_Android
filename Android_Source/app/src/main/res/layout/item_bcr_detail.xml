@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="130dp"
+    android:background="#ffeed2"
+    android:padding="10dp">
+
+    <RelativeLayout
+        android:id="@+id/item_wrapper"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/txt_BCR_ID"
+            android:layout_width="300dp"
+            android:layout_height="30dp"
+            android:text="BCR_ID"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt_PART_ID"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_BCR_ID"
+            android:text="PART_ID"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt_LOC_ID"
+            android:layout_width="300dp"
+            android:layout_height="30dp"
+            android:layout_below="@id/txt_PART_ID"
+            android:text="LOC_ID"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt_WEIGHT_CNT"
+            android:layout_width="300dp"
+            android:layout_height="30dp"
+            android:layout_below="@id/txt_LOC_ID"
+            android:text="WEIGHT_CNT"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/L_Delete_Check"
+            android:layout_width="86dp"
+            android:layout_height="63dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="4dp"
+            android:text="선택" />
+
+        <!--<TextView-->
+        <!--android:id="@+id/tv_wikipedia"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Wikipedia"-->
+        <!--android:layout_below="@+id/tv_countrycode"-->
+        <!--android:layout_marginTop="5dp"-->
+        <!--android:textSize="12dp"-->
+        <!--android:textStyle="bold" />-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/tv_population"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Wikipedia"-->
+        <!--android:layout_below="@+id/tv_wikipedia"-->
+        <!--android:layout_marginTop="5dp"-->
+        <!--android:textSize="10dp"-->
+        <!--android:textStyle="bold" />-->
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/item_wrapper"
+        android:layout_marginTop="20dp"
+        android:background="#ffffff" />
+
+
+</RelativeLayout>
+
+

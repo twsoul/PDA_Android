@@ -1,0 +1,9 @@
+store Password : !@acs4412
+
+
+릴리즈 빌드 시 
+Password: !@acs4412
+
+
+alias : androidKey
+키 이름 : androidKey.jks

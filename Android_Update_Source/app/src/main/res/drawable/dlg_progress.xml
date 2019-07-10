@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?><!--https://icons8.com/preloaders/ 로딩중 이미지 생성경로-->
+<animated-rotate xmlns:android="http://schemas.android.com/apk/res/android"
+    android:drawable="@drawable/acs_logo"
+    android:pivotX="40%"
+    android:pivotY="40%"></animated-rotate>

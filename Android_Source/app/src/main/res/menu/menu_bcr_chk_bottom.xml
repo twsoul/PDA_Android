@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_Insert_menu"
+        android:icon="@android:drawable/ic_menu_save"
+        android:title="바코드 저장" />
+
+    <item
+        android:id="@+id/nav_Delete_menu"
+        android:icon="@android:drawable/ic_menu_delete"
+        android:title="바코드 삭제" />
+
+    <item
+        android:id="@+id/nav_Update_menu"
+        android:icon="@android:drawable/ic_menu_upload"
+        android:title="바코드 업데이트" />
+    <!--
+        <item
+            android:id="@+id/navigation_menu4"
+            android:icon="@android:drawable/ic_menu_help"
+            android:title="MENU3" />-->
+
+</menu>

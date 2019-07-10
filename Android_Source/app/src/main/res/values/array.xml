@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="PLANTNameOpen">
+
+        <item>미국법인</item>
+
+        <item>브라질법인</item>
+
+        <item>음성공장   </item>
+        <item>경주공장   </item>
+
+    </string-array>
+
+    <string-array name="PLANTNameOpen_values">
+
+        <item>A</item>
+        <item>B</item>
+        <item>E</item>
+        <item>G</item>
+
+    </string-array>
+</resources>

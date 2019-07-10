@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">RFID-Demo</string>
+    <string name="tags_count">TAGS Count\n%d</string>
+    <string name="button_lock">Lock</string>
+</resources>

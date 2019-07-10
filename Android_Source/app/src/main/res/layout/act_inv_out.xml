@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CFDDEE"
+    android:orientation="vertical"
+    tools:context="com.example.android_pda_system.Activity.Act_Screen.Act_Inv.Act_InvOut">
+
+    <LinearLayout
+        android:id="@+id/Lay_Search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/Txt_Emp"
+                android:layout_width="100dp"
+                android:layout_height="49dp"
+                android:gravity="center"
+                android:text="사원"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <com.example.android_pda_system.CustomControl.CustomSpinControl.CustomComboBox.CustomComboBox
+                android:id="@+id/Ccb_Emp_Name"
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:background="#FFFFFF"
+                android:gravity="right"
+                android:textSize="21dp"></com.example.android_pda_system.CustomControl.CustomSpinControl.CustomComboBox.CustomComboBox>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="horizontal">
+
+
+            <com.example.android_pda_system.CustomControl.CustomDialog.CustomDateDialog.CustomDateDialog
+                android:id="@+id/Dte_Date"
+                android:layout_width="201dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:background="#ffffff"
+                android:hint="Insert Date[Click]"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:windowSoftInputMode="stateAlwaysHidden"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="8dp" />
+
+            <Button
+                android:id="@+id/Btn_Search"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:text="조회"
+                android:textSize="21dp"
+                app:layout_constraintLeft_toRightOf="@+id/Dte_Date"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <EditText
+                android:id="@+id/Txt_BARCODE"
+                android:layout_width="201dp"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:background="#ffffff"
+                android:hint="Insert Barcode"
+                android:inputType="text"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="8dp" />
+
+            <Button
+                android:id="@+id/Btn_Insert"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:text="수동입력"
+                android:textSize="21dp"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/Btn_Delete"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:text="선택 삭제"
+                android:textSize="21dp"
+                app:layout_constraintLeft_toRightOf="@+id/Dte_Date"
+                app:layout_constraintTop_toTopOf="parent" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/Btn_InvOut"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:text="재고출고"
+                android:textSize="21dp"
+                app:layout_constraintLeft_toRightOf="@+id/Dte_Date"
+                app:layout_constraintTop_toTopOf="parent" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <HorizontalScrollView
+        android:id="@+id/HorizontalScrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Btn_Search"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="8dp">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/Recyclerview_List"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+
+</LinearLayout>

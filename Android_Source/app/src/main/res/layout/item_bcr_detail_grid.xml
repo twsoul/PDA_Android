@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#ffeed2">
+
+    <LinearLayout
+        android:id="@+id/item_wrapper"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <CheckBox
+            android:id="@+id/Chk_Checked"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/edge"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp" />
+
+        <TextView
+            android:id="@+id/txt_BCR_ID"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="BCR_ID"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:background="@drawable/edge"
+            android:padding="10dp" />
+
+        <TextView
+            android:id="@+id/txt_PART_NAME"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/txt_BCR_ID"
+            android:text="PART_NAME"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:background="@drawable/edge"
+            android:padding="10dp" />
+
+        <TextView
+            android:id="@+id/txt_PLANT_NAME"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_below="@id/txt_PART_ID"
+            android:text="PLANT_NAME"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:background="@drawable/edge"
+            android:padding="10dp" />
+
+        <TextView
+            android:id="@+id/txt_QTY"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_below="@id/txt_LOC_ID"
+            android:text="QTY"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:background="@drawable/edge"
+            android:padding="10dp" />
+
+
+        <!--<TextView-->
+        <!--android:id="@+id/tv_wikipedia"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Wikipedia"-->
+        <!--android:layout_below="@+id/tv_countrycode"-->
+        <!--android:layout_marginTop="5dp"-->
+        <!--android:textSize="12dp"-->
+        <!--android:textStyle="bold" />-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/tv_population"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Wikipedia"-->
+        <!--android:layout_below="@+id/tv_wikipedia"-->
+        <!--android:layout_marginTop="5dp"-->
+        <!--android:textSize="10dp"-->
+        <!--android:textStyle="bold" />-->
+
+    </LinearLayout>
+
+    <!--<View-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="1dp"-->
+    <!--android:layout_below="@+id/item_wrapper"-->
+    <!--android:layout_marginTop="20dp"-->
+    <!--android:background="#ffffff" />-->
+
+
+</RelativeLayout>
+
+
